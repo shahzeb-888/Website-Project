@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Fitness</title>
+    <link rel="stylesheet" href="PF.css">
+    <script src="pf.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+</head>
+<body>
+   
+    
+        <nav id="navbar">
+            <div id="logo">
+                <img src="logo1.png" alt="Planet Fitness">
+            </div>
+            <ul>
+                <li><a href ="home.html">Home</a> </li>
+                <li><a href ="about.html">About Planet Fitness</a></li>
+                
+                
+
+            </ul>
+            <div id="side">
+                <ul>
+                <li><a href ="login.html">My Account</a></li>
+                <li><a href ="#">English</a></li>
+                <li><a href ="#">Search</a></li>
+                </ul>
+            </div>
+            <div id="btn">
+                <!-- <button> -->
+                    <a href="sign.html">Sign Up</a> 
+                <!-- </button> -->
+            </div>
+        </nav>
+
+        <div class="signbg"></div>
+
+        <div class="registration">
+            <h1>REGISTER HERE</h1>
+            <form action="noaction.php" name="form" method="post" onsubmit="return validation()">
+            <div class="form-reg">
+                <input type="text" name="name" placeholder="full name" id="username" value="">
+                <span id="message" style="color: rgb(252, 233, 22);"></span>
+            </div>
+            
+            <div class="form-reg">
+                <input type="email" name="" placeholder="Email Address" name="email" value="">
+                <span id="message_email" style="color: rgb(252, 233, 22);"></span>
+            </div>
+    
+            <div class="form-reg">
+                <input type="number" name="" placeholder="your age">
+            </div>
+    
+            <div class="form-reg">
+                <input type="text" name="" placeholder="country">
+            </div>
+    
+            <div class="form-reg">
+                <input type="text" name="" placeholder="Phone Number">
+            </div>
+            <div class="radio-group">
+                <label class="radio">
+                    <input type="radio" value="male" name="gender">
+                    male
+                    <span></span>
+                </label>
+            </div> 
+            <div class="radio-group">
+                <label class="radio">
+                    <input type="radio" value="female" name="gender">
+                    female
+                    <span></span>
+                </label>
+            </div>
+            <button class="regbtn">register</button>
+        </form>
+        </div>
+</body>
+</html>
